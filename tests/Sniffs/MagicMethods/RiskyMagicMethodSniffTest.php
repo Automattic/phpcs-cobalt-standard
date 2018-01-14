@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace NeutronStandardTest;
+namespace CobaltStandardTest;
 
 use PHPUnit\Framework\TestCase;
 
@@ -9,7 +9,7 @@ class RiskyMagicMethodSniffTest extends TestCase {
 	public function testRiskyMagicMethodsSniff() {
 		$fixtureFile = __DIR__ . '/fixture.php';
 		$sniffFiles = [
-			__DIR__ . '/../../../NeutronStandard/Sniffs/MagicMethods/RiskyMagicMethodSniff.php',
+			__DIR__ . '/../../../CobaltStandard/Sniffs/MagicMethods/RiskyMagicMethodSniff.php',
 		];
 		$helper = new SniffTestHelper();
 		$phpcsFile = $helper->prepareLocalFileForSniffs($sniffFiles, $fixtureFile);

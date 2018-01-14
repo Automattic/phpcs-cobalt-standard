@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace NeutronStandardTest;
+namespace CobaltStandardTest;
 
 use PHPUnit\Framework\TestCase;
 
@@ -9,9 +9,9 @@ class DisallowMagicMethodsSniffTest extends TestCase {
 	public function testDisallowMagicMethodsSniffs() {
 		$fixtureFile = __DIR__ . '/fixture.php';
 		$sniffFiles = [
-			__DIR__ . '/../../../NeutronStandard/Sniffs/MagicMethods/DisallowMagicGetSniff.php',
-			__DIR__ . '/../../../NeutronStandard/Sniffs/MagicMethods/DisallowMagicSetSniff.php',
-			__DIR__ . '/../../../NeutronStandard/Sniffs/MagicMethods/DisallowMagicSerializeSniff.php',
+			__DIR__ . '/../../../CobaltStandard/Sniffs/MagicMethods/DisallowMagicGetSniff.php',
+			__DIR__ . '/../../../CobaltStandard/Sniffs/MagicMethods/DisallowMagicSetSniff.php',
+			__DIR__ . '/../../../CobaltStandard/Sniffs/MagicMethods/DisallowMagicSerializeSniff.php',
 		];
 		$helper = new SniffTestHelper();
 		$phpcsFile = $helper->prepareLocalFileForSniffs($sniffFiles, $fixtureFile);

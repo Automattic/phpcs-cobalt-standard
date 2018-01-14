@@ -1,6 +1,6 @@
 <?php
 
-namespace NeutronStandard\Sniffs\StrictTypes;
+namespace CobaltStandard\Sniffs\StrictTypes;
 
 use PHP_CodeSniffer\Sniffs\Sniff;
 use PHP_CodeSniffer\Files\File;

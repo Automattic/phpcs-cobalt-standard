@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace NeutronStandard;
+namespace CobaltStandard;
 
 use PHP_CodeSniffer\Files\File;
 

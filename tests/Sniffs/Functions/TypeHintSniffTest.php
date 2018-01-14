@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace NeutronStandardTest;
+namespace CobaltStandardTest;
 
 use PHPUnit\Framework\TestCase;
 
 class TypeHintSniffTest extends TestCase {
 	public function testTypeHintSniff() {
 		$fixtureFile = __DIR__ . '/fixture.php';
-		$sniffFile = __DIR__ . '/../../../NeutronStandard/Sniffs/Functions/TypeHintSniff.php';
+		$sniffFile = __DIR__ . '/../../../CobaltStandard/Sniffs/Functions/TypeHintSniff.php';
 
 		$helper = new SniffTestHelper();
 		$phpcsFile = $helper->prepareLocalFileForSniffs($sniffFile, $fixtureFile);

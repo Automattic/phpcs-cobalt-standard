@@ -1,6 +1,6 @@
 <?php
 
-namespace NeutronStandard\Sniffs\Conditions;
+namespace CobaltStandard\Sniffs\Conditions;
 
 use PHP_CodeSniffer\Sniffs\Sniff;
 use PHP_CodeSniffer\Files\File;

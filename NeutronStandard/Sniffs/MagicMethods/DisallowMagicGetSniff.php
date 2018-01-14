@@ -1,6 +1,6 @@
 <?php
 
-namespace NeutronStandard\Sniffs\MagicMethods;
+namespace CobaltStandard\Sniffs\MagicMethods;
 
 use PHP_CodeSniffer\Sniffs\Sniff;
 use PHP_CodeSniffer\Files\File;

@@ -1,8 +1,8 @@
 <?php
 
-namespace NeutronStandard\Sniffs\Arrays;
+namespace CobaltStandard\Sniffs\Arrays;
 
-use NeutronStandard\SniffHelpers;
+use CobaltStandard\SniffHelpers;
 use PHP_CodeSniffer\Sniffs\Sniff;
 use PHP_CodeSniffer\Files\File;
 
