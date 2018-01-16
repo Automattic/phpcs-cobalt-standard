@@ -1,4 +1,4 @@
-# Neutron PHP Standard <a href="https://travis-ci.org/Automattic/phpcs-neutron-standard"><img src="https://img.shields.io/travis/Automattic/phpcs-neutron-standard/master.svg" alt="Build status" /></a>
+# Cobalt PHP Standard <a href="https://travis-ci.org/Automattic/phpcs-cobalt-standard"><img src="https://img.shields.io/travis/Automattic/phpcs-cobalt-standard/master.svg" alt="Build status" /></a>
 
 These are a set of modern (PHP >7) linting guidelines meant to be applied in addition to the [the WordPress coding standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards) for WordPress development. Because of the newer PHP version, it is not suitable for work on Core WordPress, but may be useful for those who are not bound by PHP 5.2.
 
@@ -12,14 +12,14 @@ To use these rules in a project which is set up using [composer](https://href.li
 
 ```
 composer require --dev squizlabs/php_codesniffer dealerdirect/phpcodesniffer-composer-installer
-composer require --dev automattic/phpcs-neutron-standard
+composer require --dev automattic/phpcs-cobalt-standard
 ```
 
-If you want this standard, the WordPress standard, the VariableAnalysis standard, and other customizations, you can install the meta-standard [NeutronRuleset](https://github.com/Automattic/phpcs-neutron-ruleset) instead.
+If you want this standard, the WordPress standard, the VariableAnalysis standard, and other customizations, you can install the meta-standard [CobaltRuleset](https://github.com/Automattic/phpcs-cobalt-ruleset) instead.
 
 ```
 composer require --dev squizlabs/php_codesniffer dealerdirect/phpcodesniffer-composer-installer
-composer require --dev automattic/phpcs-neutron-ruleset
+composer require --dev automattic/phpcs-cobalt-ruleset
 ```
 
 ## Configuration
@@ -30,7 +30,7 @@ When installing sniff standards in a project, you edit a `phpcs.xml` file with t
 <?xml version="1.0"?>
 <ruleset name="MyStandard">
  <description>My library.</description>
- <rule ref="NeutronStandard"/>
+ <rule ref="CobaltStandard"/>
 </ruleset>
 ```
 
@@ -39,7 +39,7 @@ When installing sniff standards in a project, you edit a `phpcs.xml` file with t
 Most editors have a phpcs plugin available, but you can also run phpcs manually. To run phpcs on a file in your project, just use the command-line as follows (the `-s` causes the sniff code to be shown, which is very important for learning about an error).
 
 ```
-vendor/bin/phpcs -s src/MyProject/MyClass.php 
+vendor/bin/phpcs -s src/MyProject/MyClass.php
 ```
 
 -----
